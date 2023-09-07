@@ -1,6 +1,14 @@
 {
   "settingsInheritedFrom": "WFS-Mend/whitesource-config@main",
+  "leastVulnerablePackageSettings": {
+    "enabled": true
+  },
   "remediateSettings": {
+    "workflowRules": {
+      "enabled": true,
+      "minVulnerabilityScore": 7,
+      "maxVulnerabilityScore": 10
+      },
     "enableRenovate": true,
     "extends": [
       "github>whitesource/merge-confidence:beta",
