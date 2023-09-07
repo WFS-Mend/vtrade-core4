@@ -11,13 +11,13 @@
       },
     "enableRenovate": true,
     "extends": [
-      "github>whitesource/merge-confidence:beta",
-      "config:base",
-      "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
+      "config:recommended", 
+      ":dependencyDashboardApproval"
       ],
     "packageRules": [{
         "matchPackagePrefixes": ["com.wfs"],
-	    "registryUrls": ["https://maven.pkg.github.com/WFS-Mend/vtrade-common/"]
+        "registryUrls": ["https://maven.pkg.github.com/WFS-Mend/vtrade-common/"],
+	"dependencyDashboardApproval": true
     }]
   },
   "hostRules": [
