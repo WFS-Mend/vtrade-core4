@@ -11,7 +11,7 @@
       },
     "enableRenovate": true,
     "extends": [
-      "config:recommended", 
+      "config:base", 
       ":dependencyDashboardApproval"
       ],
     "packageRules": [{
